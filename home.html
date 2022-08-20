@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyPay-Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-teal-100">
+    <header>
+        <h1 class="text-2xl md:text-4xl lg:text-5xl font-semibold text-center text-blue-900 p-2 m-6 md:m-16">Let your money grow with <span class="font-bold text-teal-800">FastPay</span>!!</h1>
+    </header>
+
+    <main>
+        <section>
+            <div class="w-3/4 mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-gradient-to-r from-teal-700 to-cyan-500 drop-shadow-xl p-8 rounded-xl w-full">
+                    <p class="text-2xl font-semibold text-white">Deposit</p>
+                    <p class="text-4xl font-semibold text-white">$<span id="deposit-total">00</span></p>
+                </div>
+                <div class="bg-gradient-to-r from-teal-700 to-cyan-500 drop-shadow-xl p-8 rounded-xl w-full">
+                    <p class="text-2xl font-semibold text-white">Widhdraw</p>
+                    <p class="text-4xl font-semibold text-white">$<span id="withdraw-total">00</span></p>
+                </div>
+                <div class="bg-gradient-to-r from-teal-700 to-cyan-500 drop-shadow-xl p-8 rounded-xl w-full">
+                    <p class="text-2xl font-semibold text-white">Balance</p>
+                    <p class="text-4xl font-semibold text-white">$<span id="balance-total">1240</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- deposit and withdraw section -->
+        <section>
+            <div class="w-3/4 mx-auto grid md:grid-cols-1 lg:grid-cols-2 gap-4 mt-8 mb-20">
+                <div class="bg-gradient-to-br from-teal-600 via-cyan-500 to-blue-500 drop-shadow-xl p-8 md:p-14 rounded-xl w-full">
+                    <p class="text-2xl md:text-3xl font-semibold text-white py-1">Please Deposit</p>
+                    <input id="deposit-field" class="w-full block px-3 py-1 my-2 rounded-md" type="text" name="" placeholder="$ Amount you want to deposit">
+                    <button id="btn-deposit" class="bg-teal-800 hover:bg-teal-900 text-white font-semibold px-6 py-2 mt-1 rounded-md">Deposit</button>
+                </div>
+                <div class="bg-gradient-to-br from-blue-500 via-cyan-500 to-teal-600 drop-shadow-xl p-8 md:p-14 rounded-xl w-full">
+                    <p class="text-2xl md:text-3xl font-semibold text-white py-1">Please Withdraw</p>
+                    <input id="withdraw-field" class="w-full block px-3 py-1 my-2 rounded-md" type="" name="" placeholder="$ Amount you want to withdraw">
+                    <button id="btn-withdraw" class="bg-teal-800 hover:bg-teal-900 text-white font-semibold px-6 py-2 mt-1 rounded-md">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/utilities.js"></script>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+</html>
+</html>
